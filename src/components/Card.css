@@ -1,0 +1,33 @@
+.card {
+	border: 1px solid var(--blue-dark);
+	width: 22em;
+	transition: transform 0.5s;
+	line-height: 1.5;
+}
+
+.card p {
+	margin-top: 0;
+	text-align: justify; /* not listed, just looks better :D  */
+}
+
+.title,
+.card p {
+	padding: 0 1.25em;
+}
+
+.title {
+	color: var(--primary-blue);
+	margin: 0.625em 0;
+}
+
+.fade {
+	opacity: 0.5;
+	transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+	box-shadow: 1px 1px 5px var(--primary-blue);
+	transform: scale(1.05);
+	transition: all 0.3s ease-in-out;
+	opacity: 1;
+}
